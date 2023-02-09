@@ -19,3 +19,9 @@ Sketch uploaded to a Keyestudio NODEMCU board, but should work with any ESP8266.
 
 Feel free to fork and modify! I'm still a bit of a C++ newb so I did my best <3
 
+
+## Notes on sensors:
+
+- Always check whether your sensor has a resistor in it - Keyestudio's DHT does, so I didn't need to include one. Depending on your board you may need to hook up the DHT to the VIN to give it 5v as 3.3v may not be enough power and give wildly inaccurate readings.
+
+- DHT11 sensors do have a pretty wide margin of error across brands, so keep that in mind if you are looking for very accurate readings.
